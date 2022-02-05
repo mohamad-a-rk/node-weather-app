@@ -11,7 +11,7 @@ const forcast = (latitude, longitude, callback) => {
         }
         else {
             const data = response.body.current
-            callback(undefined, "It's currently " + data.temperature + " and it feels like " + data.feelslike)
+            callback(undefined, "It's currently " + data.temperature + " and it feels like " + data.feelslike + "  The humidity is " + data.humidity + "% ")
         }
     })
 }
